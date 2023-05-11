@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Pensamento } from '../pensamento.model';
 import { PensamentoService } from '../pensamento.service';
 
@@ -7,7 +7,7 @@ import { PensamentoService } from '../pensamento.service';
   templateUrl: './listar-pensamento.component.html',
   styleUrls: ['./listar-pensamento.component.css']
 })
-export class ListarPensamentoComponent implements OnInit {
+export class ListarPensamentoComponent {
 
   listaPensamentos: Pensamento[] = []
 

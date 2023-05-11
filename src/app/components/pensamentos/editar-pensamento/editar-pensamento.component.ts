@@ -4,11 +4,11 @@ import { PensamentoService } from '../pensamento.service';
 import { Pensamento } from './../pensamento.model';
 
 @Component({
-  selector: 'app-excluir-pensamento',
-  templateUrl: './excluir-pensamento.component.html',
-  styleUrls: ['./excluir-pensamento.component.css']
+  selector: 'app-editar-pensamento',
+  templateUrl: './editar-pensamento.component.html',
+  styleUrls: ['./editar-pensamento.component.css']
 })
-export class ExcluirPensamentoComponent {
+export class EditarPensamentoComponent {
 
   pensamento: Pensamento = {
     id: 0,
@@ -30,12 +30,10 @@ export class ExcluirPensamentoComponent {
     })
   }
 
-  excluirPensamento() {
-    if (this.pensamento.id) {
-      this.service.excluir(this.pensamento.id).subscribe(() => {
-        this.router.navigate(['/listarPensamento'])
-      })
-    }
+  editarPensamento() {
+    this.service.editar(this.pensamento).subscribe(() => {
+      this.router.navigate(['/listarPensamento'])
+    })
   }
 
   cancelar() {
