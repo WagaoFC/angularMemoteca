@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Pensamento } from '../pensamento.model';
+import { PensamentoService } from '../pensamento.service';
 
 @Component({
   selector: 'app-pensamento',
@@ -14,6 +15,8 @@ export class PensamentoComponent {
     autoria: '',
     modelo: ''
   }
+
+  constructor(private service: PensamentoService) { }
 
   larguraPensamento(): string {
     if (this.pensamento.conteudo.length >= 256) {
