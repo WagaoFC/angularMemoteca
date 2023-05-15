@@ -33,7 +33,8 @@ export class EditarPensamentoComponent implements OnInit {
           Validators.minLength(3),
           Validators.pattern(/^[a-z ]+$/)
         ])],
-        modelo: [pensamento.modelo]
+        modelo: [pensamento.modelo],
+        favorito: [pensamento.favorito]
       })
     })
   }

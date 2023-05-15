@@ -4,61 +4,71 @@
       "id": 1,
       "conteudo": "teste edicao",
       "autoria": "teste edicao",
-      "modelo": "modelo2"
+      "modelo": "modelo2",
+      "favorito": true
     },
     {
+      "id": 2,
       "conteudo": "12121212",
       "autoria": "1212",
       "modelo": "modelo1",
-      "id": 2
+      "favorito": false
     },
     {
+      "id": 3,
       "conteudo": "testes letras",
       "autoria": "asdf",
       "modelo": "modelo1",
-      "id": 3
+      "favorito": false
     },
     {
+      "id": 4,
       "conteudo": "testestestesteste",
       "autoria": "testestestesteste",
       "modelo": "modelo3",
-      "id": 4
+      "favorito": true
     },
     {
+      "id": 5,
       "conteudo": "testestestesteste",
       "autoria": "testestestesteste",
       "modelo": "modelo2",
-      "id": 5
+      "favorito": false
     },
     {
+      "id": 6,
       "conteudo": "testestestesteste",
       "autoria": "testestestesteste",
       "modelo": "modelo1",
-      "id": 6
+      "favorito": false
     },
     {
+      "id": 7,
       "conteudo": "testestestesteste",
       "autoria": "testestestesteste",
       "modelo": "modelo3",
-      "id": 7
+      "favorito": false
     },
     {
+      "id": 8,
       "conteudo": "testestestesteste",
       "autoria": "testestestesteste",
       "modelo": "modelo3",
-      "id": 8
+      "favorito": false
     },
     {
+      "id": 9,
       "conteudo": "devWagao",
       "autoria": "wagner",
       "modelo": "modelo2",
-      "id": 9
+      "favorito": false
     },
     {
+      "id": 10,
       "conteudo": "devWagao",
       "autoria": "wagner",
       "modelo": "modelo2",
-      "id": 10
+      "favorito": false
     }
   ]
 }
