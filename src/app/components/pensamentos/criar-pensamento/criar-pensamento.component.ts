@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { Pensamento } from '../pensamento.model';
 import { PensamentoService } from '../pensamento.service';
 
 @Component({
@@ -27,7 +26,8 @@ export class CriarPensamentoComponent {
       ])],
       autoria: ['', Validators.compose([
         Validators.required,
-        Validators.minLength(3)
+        Validators.minLength(3),
+        Validators.pattern(/^[a-z]+$/)
       ])],
       modelo: ['modelo1']
     })
