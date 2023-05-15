@@ -33,14 +33,14 @@
       "conteudo": "testestestesteste",
       "autoria": "testestestesteste",
       "modelo": "modelo2",
-      "favorito": true
+      "favorito": false
     },
     {
       "id": 6,
       "conteudo": "testestestesteste",
       "autoria": "testestestesteste",
       "modelo": "modelo1",
-      "favorito": true
+      "favorito": false
     },
     {
       "id": 7,
@@ -61,7 +61,7 @@
       "conteudo": "devWagao",
       "autoria": "wagner",
       "modelo": "modelo2",
-      "favorito": true
+      "favorito": false
     },
     {
       "id": 10,

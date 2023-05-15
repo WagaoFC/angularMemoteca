@@ -14,6 +14,7 @@ export class ListarPensamentoComponent {
   haMaisPensamentos: boolean = true
   filtro: string = ""
   favorito: boolean = false
+  listaFavoritos: Pensamento[] = []
 
   constructor(private service: PensamentoService) { }
 
@@ -47,6 +48,7 @@ export class ListarPensamentoComponent {
     this.paginaAtual = 1
     this.service.listar(this.paginaAtual, this.filtro, this.favorito).subscribe(favoritos => {
       this.listaPensamentos = favoritos
+      this.listaFavoritos = favoritos
     })
   }
 }
