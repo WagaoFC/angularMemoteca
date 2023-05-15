@@ -16,6 +16,7 @@ export class ListarPensamentoComponent {
   filtro: string = ""
   favorito: boolean = false
   listaFavoritos: Pensamento[] = []
+  titulo: string = "Meu mural"
 
   constructor(
     private service: PensamentoService,
@@ -53,6 +54,7 @@ export class ListarPensamentoComponent {
   }
 
   listarFavoritos() {
+    this.titulo = "Meus favoritos"
     this.favorito = true
     this.haMaisPensamentos = true
     this.paginaAtual = 1
